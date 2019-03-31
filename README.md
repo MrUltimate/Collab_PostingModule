@@ -18,24 +18,6 @@ Regardless of using the `Plugin Form` or the `Vanilla Form`, the JS code require
 
 ### Installing the Plugin Form
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-### Installing the Plugin Form
-
 If you're using the Plugin Form, follow the following steps to install the form and get it working:
 
 * Copy all files from the CSS Folder and place them in the appropriate folder. Then call them in your `index.html` file like so:
@@ -50,10 +32,10 @@ If you're using the Plugin Form, follow the following steps to install the form 
 
 * Add the form HTML from the `form.html` file under the `post_interface` div in your `index.html` file.
 * Then start adding the Javascript from the JS Folder. Copy the following Files in your build folder:
- * classie.js
- * fullscreenForm.js
- * modernizr.custom.js
- * selectFx.js
+   * classie.js
+   * fullscreenForm.js
+   * modernizr.custom.js
+   * selectFx.js
 * Then call them in your `index.html` file like so:
 
 ```
@@ -82,8 +64,26 @@ If you're using the Plugin Form, follow the following steps to install the form 
 </script>
 ```
 * Finally, start modifying your JS files to read and write posts.
- * Copy the `loadPosts()` function from the `loadPost.js` file and replace it in your `index.html` file
- * Copy the `writePost()` function from the `writePost.js` file and replace it in your `network-interface.js` file.
+   * Copy the `loadPosts()` function from the `loadPost.js` file and replace it in your `index.html` file
+   * Copy the `writePost()` function from the `writePost.js` file and replace it in your `network-interface.js` file.
+
+### Installing the Vanilla Form
+
+A step by step series of examples that tell you how to get a development env running
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
 
 
 
