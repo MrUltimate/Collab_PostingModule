@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
+
   //submit botton
   $(".more").click(function() {
     $(this).toggleClass("toggle");
@@ -24,13 +24,15 @@ $(document).ready(function() {
     "hideMethod": "slideUp"
   }
 
-  $('fs-submit').click(function() {
-    console.log("post is posted!");
-    toastr.success("Demo - Posted Successfully!");
-    setTimeout(function() {
-      $('.more').toggleClass("toggle");
-      $('.submit').toggleClass("active");
-    }, 500);
-  });
+  function demo() {
+    $('fs-submit').click(function() {
+      console.log("post is posted!");
+      toastr.success("Demo - Posted Successfully!");
+      setTimeout(function() {
+        $('.more').toggleClass("toggle");
+        $('.submit').toggleClass("active");
+      }, 500);
+    });
+  }
 
 });
