@@ -1,0 +1,39 @@
+<!-- interface for if you want to post: -->
+
+<!-- You can fully customize your form style here -->
+<!-- Make sure you add the appropriate css classes and use the IDs correctly if you're changing the writePost() function -->
+<!-- Link this with your form.css or alternatively, style.css (in your index.html) -->
+
+<!-- If you change the "submit" class, make sure you also edit it in the writePost() function -->
+
+<div class="submit" id="post_interface">
+  <div class="container">
+      <h1>Submit Post</h1>
+      <form id="myform" autocomplete="off">
+        <ol>
+          <li>
+            <label for="q1">What's the title?</label>
+            <input id="q1" name="q1" type="text" placeholder="Enter Title Here..." required autofocus/>
+          </li>
+          <li>
+            <label for="q2">Description</label>
+            <textarea id="q2" name="q2" placeholder="Describe here"></textarea>
+          </li>
+          <li data-input-trigger>
+            <label  for="q3">What kind of media are you adding?</label>
+            <div>
+              <span><input id="q3a" name="q3" type="radio" value="Text" required/><label for="q3a">Text</label></span>
+              <span><input id="q3b" name="q3" type="radio" value="Image" /><label for="q3b">Image</label></span>
+              <span><input id="q3c" name="q3" type="radio" value="Audio" /><label for="q3c">Audio</label></span>
+              <span><input id="q3d" name="q3" type="radio" value="Video" /><label for="q3d">Video</label></span>
+            </div>
+          </li>
+          <li>
+            <label>Choose media from Direct Link</label>
+            <input id="q4" name="q4" type="text" placeholder="Enter Link Here..." autofocus/>
+          </li>
+        </ol>
+        <button type="submit">Submit Post</button>
+      </form>
+  </div>
+</div>
