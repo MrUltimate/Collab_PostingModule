@@ -97,7 +97,7 @@ Deployment of this on a Live site depends on the [DataArchive API](https://beake
 
 ## Built With
 
-* [Lukas's BoilerPlate](https://github.com/leigler/ni-boilerplate) - The Boiler and framework code used
+* [Lukas's BoilerPlate](https://github.com/leigler/ni-boilerplate)
 * [Classie.js](https://github.com/desandro/classie)
 * [selectFix.js](http://static.qa.dealer.com/v8/global/js/jquery/selectfix/)
 * [fullscreenForm](https://github.com/codrops/FullscreenForm/blob/master/js/fullscreenForm.js)
