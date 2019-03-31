@@ -2,6 +2,8 @@
 
 A Custom Posting and Media Type Management Module built with DatArchive API for Parson's Network Interfacing Collaboration.
 
+![alt text](https://github.com/MrUltimate/Collab_PostingModule/blob/master/form-demo.gif "Form Demo GIF")
+
 ## Getting Started
 
 To get started, you need to choose whether you want to use the posting module provided (see demo), or use the vanilla form files and create a custom submission form that's more aptly suited for your website.
