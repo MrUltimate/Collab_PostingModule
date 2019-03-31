@@ -24,6 +24,10 @@ $(document).ready(function() {
     "hideMethod": "slideUp"
   }
 
+  $("#myform").submit(function(e) {
+    e.preventDefault();
+  });
+
   function demo() {
     $('fs-submit').click(function() {
       console.log("post is posted!");
