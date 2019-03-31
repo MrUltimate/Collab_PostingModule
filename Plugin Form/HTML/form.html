@@ -1,0 +1,36 @@
+<!-- interface for if you want to post: -->
+<div class="submit" id="post_interface">
+  <div class="container">
+    <div class="fs-form-wrap" id="fs-form-wrap">
+      <div class="fs-title">
+        <h1>Submit Post</h1>
+      </div>
+      <form id="myform" class="fs-form fs-form-full" autocomplete="off">
+        <ol class="fs-fields">
+          <li>
+            <label class="fs-field-label fs-anim-upper" for="q1">What's the title?</label>
+            <input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Enter Title Here..." required autofocus/>
+          </li>
+          <li>
+            <label class="fs-field-label fs-anim-upper" for="q2" data-info="This isn't required...">Description</label>
+            <textarea class="fs-anim-lower" id="q2" name="q2" placeholder="Describe here"></textarea>
+          </li>
+          <li data-input-trigger>
+            <label class="fs-field-label fs-anim-upper" for="q3" data-info="This will determine how we output your submission">What kind of media are you adding?</label>
+            <div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+              <span><input id="q3a" name="q3" type="radio" value="Text" required/><label for="q3a" class="radio-text">Text</label></span>
+              <span><input id="q3b" name="q3" type="radio" value="Image" /><label for="q3b" class="radio-image">Image</label></span>
+              <span><input id="q3c" name="q3" type="radio" value="Audio" /><label for="q3c" class="radio-audio">Audio</label></span>
+              <span><input id="q3d" name="q3" type="radio" value="Video" /><label for="q3d" class="radio-video">Video</label></span>
+            </div>
+          </li>
+          <li data-input-trigger>
+            <label class="fs-field-label fs-anim-upper" data-info="This will be your media source">Choose media from Direct Link</label>
+            <input class="fs-anim-lower" id="q4" name="q4" type="text" placeholder="Enter Link Here..." autofocus/>
+          </li>
+        </ol><!-- /fs-fields -->
+        <button class="fs-submit" type="submit">Submit Post</button>
+      </form><!-- /fs-form -->
+    </div><!-- /fs-form-wrap -->
+  </div><!-- /container -->
+</div>
