@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  
   //submit botton
   $(".more").click(function() {
     $(this).toggleClass("toggle");
