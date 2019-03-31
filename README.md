@@ -20,7 +20,7 @@ Regardless of using the `Plugin Form` or the `Vanilla Form`, the JS code require
 
 If you're using the Plugin Form, follow the following steps to install the form and get it working:
 
-* Copy all files from the CSS Folder and place them in the appropriate folder. Then call them in your `index.html` file like so:
+* Copy all files from the CSS Folder and place them in the `build` folder. Then call them in your `index.html` file like so:
 
 ```
 <link rel="stylesheet" type="text/css" href="build/normalize.css" />
@@ -57,7 +57,7 @@ If you're using the Plugin Form, follow the following steps to install the form 
 
     new FForm(formWrap, {
       onReview: function() {
-        classie.add(document.body, 'overview'); // for demo purposes only
+        classie.add(document.body, 'overview');
       }
     });
   })();
@@ -69,47 +69,50 @@ If you're using the Plugin Form, follow the following steps to install the form 
 
 ## Installing the Vanilla Form
 
-A step by step series of examples that tell you how to get a development env running
+To install the Vanilla Form, follow the steps below:
 
-Say what the step will be
+* Make sure you're calling jQuery as dictated in the [Prerequisites][Prerequisites] section.
+* Start my adding your JS files. We do this first as this is the part that **requires the least amount of editing**
+* Start modifying your JS files to read and write posts.
+   * Copy the `loadPosts()` function from the `loadPost.js` file and replace it in your `index.html` file
+   * Copy the `writePost()` function from the `writePost.js` file and replace it in your `network-interface.js` file.
+* Then add the form HTML template code from the `form.html` file under the HTML folder. Place this in your `post_interface` <div> or alternatively, in the `is_Owner()` function.
+   * Customize the HTML structure to your liking.
+* Finally add your custom CSS code. An empty `form.css` file is provided in the CSS folder. Alternatively, you can also use your current `style.css` file.
 
-```
-Give the example
-```
 
-And repeat
+### Considerations:
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+* If your posting interface is not hidden out of the viewport, you can ignore the code from the `main.js` file. If your form interface is out of the viewport and you want to trigger it in view on click, you can use the jQuery code template from the `main.js` file to make that happen.
+* Another consideration is to make sure you're using the right class names and IDs in your `index.html` file and your `loadPost()` and `writePost()` functions.
+* If you want to use the submit button trigger from the `main.js` code, make sure you have the right CSS classes in place for that.
 
 
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Deployment of this on a Live site depends on the [DataArchive API](https://beakerbrowser.com/docs/apis/dat). Obviously you already have this in place through the [Boilerplate](https://github.com/leigler/ni-boilerplate).
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Lukas's BoilerPlate](https://github.com/leigler/ni-boilerplate) - The Boiler and framework code used
+* [Classie.js](https://github.com/desandro/classie)
+* [selectFix.js](http://static.qa.dealer.com/v8/global/js/jquery/selectfix/)
+* [fullscreenForm](https://github.com/codrops/FullscreenForm/blob/master/js/fullscreenForm.js)
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/MrUltimate/Collab_PostingModule/tree/master) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+Current Version – 1.0.0
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Shivam Sinha** - *Initial work* - [ShivamSinha](https://github.com/MrUltimate)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/MrUltimate/Collab_PostingModule/graphs/contributors) who participated in this project.
 
 ## License
 
@@ -118,5 +121,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 * Hat tip to anyone whose code was used
-* Inspiration
-* etc
