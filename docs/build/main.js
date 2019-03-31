@@ -28,15 +28,13 @@ $(document).ready(function() {
     e.preventDefault();
   });
 
-  function demo() {
-    $('fs-submit').click(function() {
-      console.log("post is posted!");
-      toastr.success("Demo - Posted Successfully!");
-      setTimeout(function() {
-        $('.more').toggleClass("toggle");
-        $('.submit').toggleClass("active");
-      }, 500);
-    });
-  }
+  $('.fs-submit').click(function() {
+    console.log("post is posted!");
+    toastr.success("Demo - Posted Successfully!");
+    setTimeout(function() {
+      $('.more').toggleClass("toggle");
+      $('.submit').toggleClass("active");
+    }, 500);
+  });
 
 });
