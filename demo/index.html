@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Boilerplate User Interface</title>
+	<link rel="stylesheet" type="text/css" href="build/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
+	<link rel="stylesheet" href="build/toastr.min.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="build/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="build/demo.css" />
+	<link rel="stylesheet" type="text/css" href="build/component.css" />
+	<link rel="stylesheet" type="text/css" href="build/cs-select.css" />
+	<link rel="stylesheet" type="text/css" href="build/cs-skin-boxes.css" />
+	<!-- <script type="text/javascript" src="build/network-interfacing.js"></script> -->
+	<script type="text/javascript" src="build/main.js"></script>
+	<script type="text/javascript" src="build/modernizr.custom.js"></script>
+</head>
+
+<body>
+
+	<!-- your profile: -->
+	<div id="profile">
+		<div class="name">Shivam Sinha</div>
+		<div class="bio">This is a demo version of the <a href="https://github.com/MrUltimate/Collab_PostingModule/tree/master" target="_blank">Posting and Media Type Management Module</a>. DatArchive features, loading and posting have been disabled for this demo as DatAPI isn't supported in conventional browsers.</div>
+		<div class="profileLinks">
+			<a href="https://www.helloshivam.com/" target="_blank" class="profileLink">Website</a>
+			<a href="mailto:shivam@newschool.edu" target="_blank" class="profileLink">Email</a>
+			<a href="https://www.helloshivam.com/" target="_blank" class="profileLink">Portfolio</a>
+			<a href="https://www.instagram.com/hello_shiv" target="_blank" class="profileLink">Instagram</a>
+		</div>
+	</div>
+
+	<!-- interface for if you want to post: -->
+	<div class="submit" id="post_interface">
+		<div class="container">
+			<div class="fs-form-wrap" id="fs-form-wrap">
+				<div class="fs-title">
+					<h1>Submit Post</h1>
+				</div>
+				<form id="myform" class="fs-form fs-form-full" autocomplete="off">
+					<ol class="fs-fields">
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q1">What's the title?</label>
+							<input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Enter Title Here..." required autofocus/>
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q2" data-info="This isn't required...">Description</label>
+							<textarea class="fs-anim-lower" id="q2" name="q2" placeholder="Describe here"></textarea>
+						</li>
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" for="q3" data-info="This will determine how we output your submission">What kind of media are you adding?</label>
+							<div class="fs-radio-group fs-radio-custom clearfix fs-anim-lower">
+								<span><input id="q3a" name="q3" type="radio" value="Text" required/><label for="q3a" class="radio-text">Text</label></span>
+								<span><input id="q3b" name="q3" type="radio" value="Image" /><label for="q3b" class="radio-image">Image</label></span>
+								<span><input id="q3c" name="q3" type="radio" value="Audio" /><label for="q3c" class="radio-audio">Audio</label></span>
+								<span><input id="q3d" name="q3" type="radio" value="Video" /><label for="q3d" class="radio-video">Video</label></span>
+							</div>
+						</li>
+						<li data-input-trigger>
+							<label class="fs-field-label fs-anim-upper" data-info="This will be your media source">Choose media from Direct Link</label>
+							<input class="fs-anim-lower" id="q4" name="q4" type="text" placeholder="Enter Link Here..." autofocus/>
+						</li>
+					</ol><!-- /fs-fields -->
+					<button class="fs-submit" type="submit">Submit Post</button>
+				</form><!-- /fs-form -->
+			</div><!-- /fs-form-wrap -->
+		</div><!-- /container -->
+	</div>
+
+	<div class="more">
+		<svg width="32px" height="32px" viewBox="0 0 32 32">
+			<circle cx="16" cy="16" r="15"></circle>
+			<g id="plus">
+				<path d="M16,11 L16,21"></path>
+				<path d="M11,16 L21,16"></path>
+			</g>
+		</svg>
+	</div>
+
+ <!-- DISABLED FOR DEMO PURPOSES -->
+
+	<!-- <script type="text/javascript">
+		window.onload = function() {
+			console.log("boilerplate profile")
+			// doc elements
+			var profileContainer = document.getElementById("profile"),
+				postContainer = document.getElementById("posts"),
+				watchingContainer = document.getElementById("posts"),
+				watchingList = document.getElementById("watching_users"),
+				postingInterface = document.getElementById("post_interface"),
+				centralListContainer = document.getElementById("central_list"),
+				media_options = document.getElementById("mediaOptions");
+
+			// dat vars for your personal page (automatically generated)
+			// var url = "dat://"
+			// var url = window.location.toString(),
+			// 	archive = new DatArchive(url);
+
+			/******************************************************************************/
+
+			// Disabled for demo purposes.
+
+			/******************************************************************************/
+
+			// load my posts -- post loading has been disabled for demo purposes.
+
+			/******************************************************************************/
+
+			// if i'm the owner, reveal my interface:
+			// isOwner(archive)
+			// 	.then(function(e) {
+			// 		if (e) {
+			// 			// post_interface.insertAdjacentHTML("beforeend",
+			// 			// 	`
+			// 			// 	`
+			// 			// )
+			//
+			// 			var postSubmission = document.getElementById("myform");
+			// 			writePost(archive, postSubmission);
+			//
+			// 		} else {
+			// 			console.log("isOwner returns: ", e, "\n it looks like you are not the owner of this site");
+			// 		}
+			// 	})
+
+
+			/******************************************************************************/
+
+			// once you've added the class dat url (below), you can uncomment this function to have a complete list sourced from our central files:
+
+			/*
+			var classArchive = new DatArchive("CLASSHASHBASEURLHERE");
+
+			loadUsersCentral(classArchive, "/classList.json")
+			.then(function(userList){
+				console.log("userList", userList)
+				var userCounter = 0,
+						userList = userList.users;
+				usersProfiles(userCounter, userList, centralListContainer)
+
+			})
+			*/
+
+		};
+	</script> -->
+	<script src="build/classie.js"></script>
+	<script src="build/selectFx.js"></script>
+	<script src="build/fullscreenForm.js"></script>
+	<script>
+		(function() {
+			var formWrap = document.getElementById('fs-form-wrap');
+
+			[].slice.call(document.querySelectorAll('select.cs-select')).forEach(function(el) {
+				new SelectFx(el, {
+					stickyPlaceholder: false,
+					onChange: function(val) {
+						document.querySelector('span.cs-placeholder').style.backgroundColor = val;
+					}
+				});
+			});
+
+			new FForm(formWrap, {
+				onReview: function() {
+					classie.add(document.body, 'overview'); // for demo purposes only
+				}
+			});
+		})();
+	</script>
+</body>
+<script>
+
+</script>
+
+</html>
