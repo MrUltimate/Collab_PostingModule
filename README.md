@@ -15,7 +15,7 @@ If you want to use the interactive form provided, use the files from the `Plugin
 Regardless of using the `Plugin Form` or the `Vanilla Form`, the JS code requires jQuery. If you're not already calling jQuery in your `index.html`, use the following code to call jQuery. Place this **before** any other script in the `<head>` tag.
 
 ```
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 ```
 
 ## Installing the Plugin Form
