@@ -16,7 +16,7 @@ Regardless of using the `Plugin Form` or the `Vanilla Form`, the JS code require
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 ```
 
-### Installing the Plugin Form
+## Installing the Plugin Form
 
 If you're using the Plugin Form, follow the following steps to install the form and get it working:
 
@@ -67,7 +67,7 @@ If you're using the Plugin Form, follow the following steps to install the form 
    * Copy the `loadPosts()` function from the `loadPost.js` file and replace it in your `index.html` file
    * Copy the `writePost()` function from the `writePost.js` file and replace it in your `network-interface.js` file.
 
-### Installing the Vanilla Form
+## Installing the Vanilla Form
 
 A step by step series of examples that tell you how to get a development env running
 
