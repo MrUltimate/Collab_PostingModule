@@ -10,7 +10,7 @@ A Custom Posting and Media Type Management Module built with DatArchive API for 
 
 ## Getting Started
 
-To get started, you need to choose whether you want to use the posting module provided (see [demo](##Demo)), or use the vanilla form files and create a custom submission form that's more aptly suited for your website.
+To get started, you need to choose whether you want to use the posting module provided (see [demo](##-demo)), or use the vanilla form files and create a custom submission form that's more aptly suited for your website.
 
 If you want to use the interactive form provided, use the files from the `Plugin Form` folder, alternatively, use the `Vanilla Form` folder to create and customize your own form.
 
@@ -77,7 +77,7 @@ If you're using the Plugin Form, follow the following steps to install the form 
 
 To install the Vanilla Form, follow the steps below:
 
-* Make sure you're calling jQuery as dictated in the [Prerequisites](###Prerequisites) section.
+* Make sure you're calling jQuery as dictated in the [Prerequisites](###-prerequisites) section.
 * Start my adding your JS files. We do this first as this is the part that **requires the least amount of editing**
 * Start modifying your JS files to read and write posts.
    * Copy the `loadPosts()` function from the `loadPost.js` file and replace it in your `index.html` file
