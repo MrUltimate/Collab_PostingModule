@@ -4,7 +4,7 @@ A Custom Posting and Media Type Management Module built with DatArchive API for 
 
 ![alt text](https://github.com/MrUltimate/Collab_PostingModule/blob/master/form-demo.gif "Form Demo GIF")
 
-##Demo
+## Demo
 
 [Click Here](https://mrultimate.github.io/Collab_PostingModule/) to See the Plugin Form in action.
 
@@ -14,7 +14,7 @@ To get started, you need to choose whether you want to use the posting module pr
 
 If you want to use the interactive form provided, use the files from the `Plugin Form` folder, alternatively, use the `Vanilla Form` folder to create and customize your own form.
 
-###Prerequisites
+### Prerequisites
 
 Regardless of using the `Plugin Form` or the `Vanilla Form`, the JS code requires jQuery. If you're not already calling jQuery in your `index.html`, use the following code to call jQuery. Place this **before** any other script in the `<head>` tag.
 
