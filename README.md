@@ -73,6 +73,8 @@ If you're using the Plugin Form, follow the following steps to install the form 
    * Copy the `loadPosts()` function from the `loadPost.js` file and replace it in your `index.html` file
    * Copy the `writePost()` function from the `writePost.js` file and replace it in your `network-interface.js` file.
 
+* `NOTE:` In order for your posts to fully and correctly be displayed, a `mediaType` and `mediaSource` key needs to be added within the JSON. If you don't have a `mediaSource` URL, set it to null, like so: `mediaSource: null`. This will ensure that your posts are correctly rendered.
+
 ## Installing the Vanilla Form
 
 To install the Vanilla Form, follow the steps below:

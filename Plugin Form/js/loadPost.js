@@ -88,9 +88,17 @@ loadPosts(archive)
             // You can change the structure in this condition to create a simple text post if you wish
             // Currently this throws a console error with the user and the post which does not contain a Media Type
             //
-          } else if (postAndArchive.post.mediaType == null) {
-            console.error("Post ID: " + postAndArchive.post.timestamp + "from user: " + userInfo.profile.username + " does not have a Media Type!");
-          }
+          } else if (postAndArchive.post.mediaType == null || !postAndArchive.has("mediaType") || !postAndArchive.isNull("mediaType")) {
+						console.error("Post ID: " + postAndArchive.post.timestamp + " does not have a Media Type!");
+						postContainer.insertAdjacentHTML("beforeend",
+							`
+							<div class="post">
+				        <h2>${postAndArchive.post.title}</h2>
+				        <h4>${postAndArchive.post.timestamp}</h4>
+				        <p>${postAndArchive.post.content}</p>
+				      </div>
+				      `)
+					}
         })
     })
   });
